@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class=" bg-gradient-to-r from-purple-300 to-blue-300">
+    <h1 class="text-5xl text-center my-10 font-black	"> your <span class="text-5xl text-red-400">Dashboard</span>
+    </h1>
+
+    <main>
+        <!-- dashboard section -->
+        <section class="mt-20">
+            <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-4  ">
+                <div class=" bg-green-400 w-3/4 mx-auto p-10 rounded-md box  "> 
+                    <h2 class="text-2xl text-gray-100 font-semibold	">
+                        Deposit
+                    </h2>
+                    <h2 class="text-4xl text-gray-100" id="d-balance"> 000</h2>
+                </div>
+                <div class=" bg-blue-400  w-3/4 mx-auto p-10 rounded-md box	"> 
+                    <h2 class="text-2xl text-gray-100 font-semibold	">
+                    Withdraw
+                    </h2>
+                    <h2 class="text-4xl text-gray-100" id="w-balance">
+                        000
+                    </h2>
+                </div>
+                <div class="bg-purple-400  w-3/4 mx-auto p-10 rounded-md  box"> 
+                    <h2 class="text-2xl text-gray-100 font-semibold	">
+                    Balance
+                    </h2>
+                    <h2 class="text-4xl text-gray-100" id="total-b">
+                        300
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <!-- deposite and withdreaw  -->
+        <section class="w-3/4 mx-auto">
+            <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-16 mt-20">
+<div class="bg-indigo-400 p-8 rounded-md">
+    <h2 class="text-2xl text-gray-100 mb-3  font-bold"> deposit amount </h2>
+   <div>
+    <input type="text" placeholder="enter your amount" id="d-input" class="px-3 py-2 rounded"> <br>
+    <button  id="d-submit" class="text-1xl bg-gradient-to-r from-green-500 to-blue-500 p-2 mt-3 rounded text-gray-100 font-medium	">Deposit</button>
+</div>
+   </div>
+<div class="bg-pink-400 p-8 rounded-md">
+    <h2 class="text-2xl text-gray-100 mb-3 font-bold">withdraw  amount </h2>
+    <div>
+        <input type="text" class="px-3 py-2 rounded border-yellow-600 	" id="w-input" placeholder="enter your amount"> <br>
+    <button class="text-1xl bg-gradient-to-r from-green-500 to-blue-500 p-2 mt-3 rounded text-gray-100 font-medium		" id="w-submit">withdraw</button>
+    </div>
+    
+</div>
+       </div>
+       <div class=" mt-5">
+        <button  id="refresh" class="text-1xl bg-gradient-to-r from-green-500 to-blue-500 p-2 w-2/4  mt-5  m-auto block text-ceneter mt-3 rounded text-gray-100 font-medium">Refresh</button>
+    </div>
+         
+        </section>
+    </main>
+
+    <!-- script -->
+    <!-- <script src="js/deposite.js"></script> -->
+    <script src="project.js"></script>
+</body>
+</html>
